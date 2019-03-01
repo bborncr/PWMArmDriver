@@ -25,8 +25,6 @@ void servoWrite(int servo, int angle) {
 void setup() {
   Serial.begin(38400);
 
-  pinMode(INPUT_PIN, INPUT_PULLUP);
-
   pwm.begin();
   pwm.setPWMFreq(60);  // Analog servos run at ~60 Hz updates
 
